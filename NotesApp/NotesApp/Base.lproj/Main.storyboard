@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o26-oe-JhS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Notes" id="sv3-O4-OLf">
+                                        <barButtonItem key="rightBarButtonItem" title="Notes" id="Dwo-Db-Uel"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Bb-Rb-u2t">
+                                <rect key="frame" x="16" y="92" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your Note Is :" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-jM-1Dg">
+                                <rect key="frame" x="16" y="154" width="343" height="385"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGs-Il-YgW">
+                                <rect key="frame" x="255" y="580" width="104" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGF-T5-OvM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D5z-jM-1Dg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="058-iY-Rcc"/>
+                            <constraint firstItem="D5z-jM-1Dg" firstAttribute="leading" secondItem="5Bb-Rb-u2t" secondAttribute="leading" id="5bB-BV-4fr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oGs-Il-YgW" secondAttribute="bottom" constant="57" id="7TZ-o5-d1s"/>
+                            <constraint firstItem="o26-oe-JhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FIe-cf-B4A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Bb-Rb-u2t" secondAttribute="trailing" constant="16" id="IKo-61-GBk"/>
+                            <constraint firstItem="5Bb-Rb-u2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NxI-Qt-gAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5z-jM-1Dg" secondAttribute="trailing" constant="16" id="bwU-RV-xS5"/>
+                            <constraint firstItem="D5z-jM-1Dg" firstAttribute="trailing" secondItem="5Bb-Rb-u2t" secondAttribute="trailing" id="dJZ-4Z-69j"/>
+                            <constraint firstItem="5Bb-Rb-u2t" firstAttribute="top" secondItem="o26-oe-JhS" secondAttribute="bottom" constant="28" id="nYV-p4-S3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oGs-Il-YgW" secondAttribute="trailing" constant="16" id="nj9-GB-Evv"/>
+                            <constraint firstItem="D5z-jM-1Dg" firstAttribute="top" secondItem="5Bb-Rb-u2t" secondAttribute="bottom" constant="32" id="q19-8D-wEw"/>
+                            <constraint firstItem="o26-oe-JhS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z4F-9O-qEA"/>
+                            <constraint firstItem="oGs-Il-YgW" firstAttribute="top" secondItem="D5z-jM-1Dg" secondAttribute="bottom" constant="41" id="zB5-Xc-gt8"/>
+                            <constraint firstItem="o26-oe-JhS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zVy-yv-lzZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="desText" destination="D5z-jM-1Dg" id="FhL-tN-s5t"/>
+                        <outlet property="titleText" destination="5Bb-Rb-u2t" id="oyD-e1-YDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
